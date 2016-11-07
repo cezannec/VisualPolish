@@ -19,7 +19,25 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:background">@color/colorPrimary</item>
+        <!-- COMPLETED (1) Change the background color for these activity text views to colorPrimaryLight -->
+        <item name="android:background">@color/colorPrimaryLight</item>
+    </style>
+
+    <!-- COMPLETED (2) Create a new style "folderStyle" to group properties for the mail folder text views -->
+    <!-- This style should group all the repeated property values, like layout_width, height, etc -->
+    <style name="folderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- COMPLETED (4) Create a new "inboxStyle" that inherits from "folderStyle" and includes a bold textStyle property -->
+    <style name="inboxStyle" parent="folderStyle">
+        <item name="android:textStyle">bold</item>
     </style>
 
 
